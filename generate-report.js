@@ -22,12 +22,12 @@ async function generatePDF() {
         
         <div class="section">
           <h2>Antes de Enviar el Formulario</h2>
-          <img src="screenshots/before_form_submission.jpg" class="screenshot" />
+          <img src="C:\Users\Edward.Leon\Documents\Autmatización\demoqa-playwright\screenshots\before_form_submission.jpg" class="screenshot" />
         </div>
         
         <div class="section">
           <h2>Después de Enviar el Formulario</h2>
-          <img src="screenshots/after_form_submission.jpg" class="screenshot" />
+          <img src="C:\Users\Edward.Leon\Documents\Autmatización\demoqa-playwright\screenshots\after_form_submission.jpg" class="screenshot" />
         </div>
         
       </body>
