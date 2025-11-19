@@ -1,20 +1,22 @@
 // tests/demoqa.test.js
 const { test, expect } = require('@playwright/test');
+const HomePage = require('../pages/HomePage');
 const DemoqaPage = require('../pages/DemoqaPage');
 
 
 
 test('Formulario DemoQA', async ({ page }) => {
 
-  // Navegar a la página
-  await page.goto('https://demoqa.com/');  // URL de la página
-
+  const homePage = new HomePage(page);
   const demoqaPage = new DemoqaPage(page);
+
+  await homePage.cargarPagina();
+  await homePage.goToElements();
   
   // Captura antes de la acción
   await page.screenshot({ path: 'screenshots/before_form_submission.jpg' });
   
-  await demoqaPage.goToElements();
+  //await demoqaPage.goToElements();
 
   await demoqaPage.goToForms();
 
